@@ -6,22 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./server.component.scss']
 })
 export class ServerComponent {
-buuton:boolean=false
-  username=''
-  serverIsCreated=false
- 
+  showPassword:boolean=false
+  log:any|undefined =[]
+
+  
+
   constructor(){
- 
+
   }
   ngOnInit(){
 
   }
-  addServer():any{
-this.serverIsCreated=true;
-this.username=""
+
+showToggle(){
+  this.showPassword=!this.showPassword;
+ this.log.push(new Date)
+  
+  
 }
 
-getColor(){
-  return this.serverIsCreated===
-}
 }

@@ -1,17 +1,5 @@
-<div class="btn-group group">
-  <!-- <button class="btn btn-danger" (click)="" > Add server </button> -->
-  <!-- <button type="button" class="btn btn-primary" (click)="actionMethod($event)">Give Kitchen access</button> -->
-  <input type="text" class="form-control" [(ngModel)]="username" />
-  <p {ngStyle}="{backgroundcolor:getColor()}">{{ username }} is Created</p>
-  <p *ngIf="serverIsCreated">{{ username }} is Created</p>
-  
-  <button
-    type="button"
-    class="btn btn-primary"
-    [disabled]="!username"
-    (click)="addServer()"
-  >
-    add
-  </button>
-
+<div>
+ <button class="btn btn-primary" (click)="showToggle()"> Display Details</button>
+<p *ngIf="showPassword"> Secret passsword</p>
+<p *ngFor="let itemLOg of log ;let i=index"     [ngStyle]="{'background-color': i>=5  ? 'green' : 'red' }" >{{itemLOg}}</p>
 </div>
