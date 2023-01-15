@@ -1,5 +1,9 @@
-<div>
- <button class="btn btn-primary" (click)="showToggle()"> Display Details</button>
-<p *ngIf="showPassword"> Secret passsword</p>
-<p *ngFor="let itemLOg of log ;let i=index"     [ngStyle]="{'background-color': i>=5  ? 'green' : 'red' }" >{{itemLOg}}</p>
+<app-header></app-header>
+<div class="mt-3 container">
+  <div class="row">
+    <div class="col-md-12">
+      <app-recipe></app-recipe>
+      <app-shopping-list></app-shopping-list>
+    </div>
+  </div>
 </div>
