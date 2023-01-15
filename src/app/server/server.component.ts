@@ -6,8 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./server.component.scss']
 })
 export class ServerComponent {
-  showPassword:boolean=false
-  log:any|undefined =[]
 
   
 
@@ -18,11 +16,6 @@ export class ServerComponent {
 
   }
 
-showToggle(){
-  this.showPassword=!this.showPassword;
- this.log.push(new Date)
-  
-  
-}
+
 
 }
